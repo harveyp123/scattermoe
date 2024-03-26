@@ -59,7 +59,7 @@ class GLUMLPSparseMoe(nn.Module):
         top_k,
         activation=nn.SiLU(),
     ):
-        super(GLUMLP, self).__init__()
+        super(GLUMLPSparseMoe, self).__init__()
 
         self.num_experts = num_experts
         self.input_size = input_size
