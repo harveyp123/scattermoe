@@ -16,7 +16,7 @@ mlpMoe = MLPSparseMoe(
 ).cuda()
 
 GLUMLPMoe = GLUMLPSparseMoe(input_size=x_dim, hidden_size=h_dim,
-    num_experts=E, top_k=k)
+    num_experts=E, top_k=k).cuda()
 
 X = torch.randn(n_input, x_dim).cuda()
 
