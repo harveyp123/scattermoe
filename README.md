@@ -1,4 +1,4 @@
-# scattermoe
+# [scattermoe](https://github.com/shawntan/scattermoe)
 Triton-based implementation of Sparse Mixture-of-Experts (SMoE) on GPUs.
 ScatterMoE builds upon existing implementations, and overcoming some of the limitations to improve inference, training speed, and memory footprint. 
 This implementation achieves this by avoiding padding and making excessive copies of the input.
@@ -23,6 +23,8 @@ conda create -n "scatter_MoE" python=3.11
 conda activate scatter_MoE
 conda install pytorch==2.1.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install transformers==4.39.1
+pip install chardet==5.2.0
+pip install flash-attn==2.5.6
 ```
 
 
