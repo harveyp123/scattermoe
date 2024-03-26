@@ -26,6 +26,8 @@ pip install transformers==4.39.1
 pip install chardet==5.2.0
 pip install flash-attn==2.5.6
 pip install sentencepiece==0.2.0
+pip install pandas
+pip install accelerate==0.28.0
 ```
 
 
