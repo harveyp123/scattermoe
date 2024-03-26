@@ -25,6 +25,7 @@ conda install pytorch==2.1.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch
 pip install transformers==4.39.1
 pip install chardet==5.2.0
 pip install flash-attn==2.5.6
+pip install sentencepiece==0.2.0
 ```
 
 
