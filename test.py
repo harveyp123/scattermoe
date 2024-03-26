@@ -39,8 +39,8 @@ mlp = MLP(
 ).cuda()
 
 
-X = torch.randn(n_input, x_dim)
-router_weights = router(X.cuda())
+X = torch.randn(n_input, x_dim).cuda()
+router_weights = router(X)
 
 ### Following router writing from https://github.com/huggingface/transformers/blob/092f1fdaa4224fdd88c616dc9678e6fcb37bfffd/src/transformers/models/mixtral/modeling_mixtral.py#L847
 router_weights, selected_experts = torch.topk(router_weights, k, dim=-1)
